@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user_form {
+    width: 500px;
+    background-color: yellowgreen;
+    margin: 25px;
+    padding: 25px;
+    border: 2px solid green;
+    border-radius: 11px;
+}
+
+.input_group {
+    margin: 17px 0;
+}
+
+input {
+    padding: 4px 8px;
+    border-radius: 10;
+    border: none;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    /* border: 1px solid red; */
+}
+
+.btn {
+    padding: 0 15px;
+    background-color: gray;
+    color: white;
+    border-radius: 20px;
+
+}
