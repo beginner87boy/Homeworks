@@ -5,7 +5,7 @@
 } */
 
 
-.card{
+.card {
     width: 200px;
     height: 200px;
     border: 5px solid green;
@@ -21,14 +21,17 @@
 
 }
 
-.card-image img{
+.card-image img {
     max-width: 100%;
+
 }
 
 .card-info {
     padding: 10px;
+
 }
 
 .main {
     width: 100%;
+
 }
