@@ -71,10 +71,27 @@ select{
 
 }
 
-.kod {
-    width: 10px;
+.kode {
+    padding: 4px 4px;
+    margin: 5px 0;
+    width: 60px;
+    border-radius: 10px;
+    border: none;
 }
 
-.cod {
-    width: 170px;
+.code {
+    padding: 4px 4px;
+    margin: 5px 0;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+.Birtday {
+    padding: 4px 4px;
+    margin: 5px 0px;
+    width: 270px;
+    border-radius: 10px;
+    border: none;
+
 }
