@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.esas_cedvel {
+
+    width: 100%;
+   
+}
+
+.esas_basliq {
+    text-align: center;
+
+}
+
+.esas_cedvel_card {
+    width: 200px;
+    height: max-content;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+
+}
+
+.esas_cedvel_card2 {
+    width: 200px;
+    height: max-content;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 2px 2px 2px 2px goldenrod;
+
+}
+
+.esas_cedvel_card_head {
+    margin-bottom: 30px;
+}
+
+.esas_cedvel_card_head_icon {
+    color: red;
+    font-size: 20px;
+
+}
+.esas_cedvel_card_head_icon2 {
+    color: green;
+    font-size: 20px;
+
+}
+
+.esas_cedvel_card_head_icon3 {
+    color: blue;
+    font-size: 20px;
+
+}
+
+.esas_cedvel_card_menu_item {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.esas_cedvel_card_button {
+    margin-top:  20px;
+}
+
+.esas_cedvel_card_head {
+    padding: 10px;
+}
+
+.esas_cedvel_card_head_info {
+    padding: 15px;
+}
+
+.esas_cedvel_card_menu_item {
+    padding: 5px;
+}
+
+.esas_cedvel_card_button1 {
+    padding: 10px;
+    width: 120px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.esas_cedvel_card_button2 {
+    padding: 10px;
+    width: 120px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+.esas_cedvel_card_button3 {
+    padding: 10px;
+    width: 120px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
