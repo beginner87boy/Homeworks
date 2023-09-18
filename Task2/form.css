@@ -28,8 +28,6 @@ label {
     margin: 17px 0;
 }
 
-
-
 input {
     padding: 4px 50px;
     border-radius: 10px;
@@ -39,13 +37,10 @@ input {
 label {
     display: inline-block;
     width: 200px;
-
 }
-
 
 div {
     margin: 10px;
-
 }
 
 .sms {
