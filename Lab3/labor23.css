@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.basliq {
+    padding: 0 50px;
+    margin: 0 50px;
+     
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.header_tittle {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header_button {
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
