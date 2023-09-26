@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.basliq {
+    padding: 0 50px;
+    margin: 0 50px;
+     
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.header_tittle {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header_button {
+    background-color: green;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border-color: none;
+    color: white;
+}
+
+.cedvel1 {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 5%;
+    background-color: white; 
+    top: 36px;
+       
+}
+
+.box1 {
+    position: absolute;
+    width: 494px;
+    height: 288px;
+    top: 104.5px;
+    left: 109px;
+    gap: 52px;
+    border: 1px solid rebeccapurple;
+ 
+    }
+
+.box2 {
+    position: absolute;
+    width: 674px;
+    height: 449px;
+    top: 96px;
+    left: 639px;
+    border: 1px solid red;
+    
+}
+
+
+.box1_title {
+    font-size: 40px;
+    padding: 25px 0 0 0;
+}
+
+.box1_title1 {
+    font-size: 40px;
+    color: blue;
+}
+
+.box1_title2 {
+    list-style: none;
+    padding: 25px 0 0 0;
+}
+
+.submit {
+    
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    border-color: none;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin: 50px 0 0 0;
+    text-align: center;   
+    
+}
+
+.cedvel2 {
+    position: relative;
+    width: 100%;
+    height: 564px;
+    background-color: white; 
+    margin: 50px 0 0 0;
+    
+       }
+
+.cedvel2_title {
+    text-align: center;
+
+}
+
+.services {
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    background-color: white; 
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    left: 100px;
+        }
+
+.services_cards {
+    width: 390px;
+    height: 250px;
+    display: flex;
+    left: 50px;   
+          
+}
+
+.cedvel3 {
+    position: relative;
+    width: 100%;
+    height: 564px;
+    background-color: white; 
+    margin: 30px 0 0 0;
+    
+       }
+
+.cedvel3_title {
+    text-align: center;
+
+}
+
+.advantages {
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    background-color: white; 
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    left: 100px;
+        }
+
+.advantages_cards {
+    width: 390px;
+    height: 450px;
+    border: 1px solid yellowgreen;
+    display: flex;
+    left: 50px;   
+          
+}
+
+.photo {
+    width: 200px;
+    height: 100px;
+}
+
+.services_title {
+    width: 300px;
+    list-style: none;
+    padding: 25px 0 0 0;
+}
+
+.photo_advantages {
+    width: 400px;
+    height: 300px;
+}
+
+.advantages_title {
+    margin-left: 40px;
+}
+
+.advantages_title1 {
+    width: 300px;
+    list-style: none;
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
+.cedvel4 {
+    position: relative;
+    width: 100%;
+    height: 564px;
+    border: 1px solid red;
+    background-color: white; 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 100px;
+    
+       }
+
+.box {
+        
+        width: 130px;
+        height: 50px;
+        border-radius: 5%;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: none;
+        display: flex; 
+        justify-content: center; 
+        margin: 30px 0;
+               
+    }
+
+    .pricing {
+        position: absolute;
+        width: 100%;
+        height: 490px;
+        border: 1px solid brown;
+        background-color: white; 
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 55px 0;
+        justify-content: space-between;
+            }
+
+.pricing_card {
+        width: 390px;
+        height: 450px;
+        border: 1px solid yellowgreen;
+        display: flex;
+        left: 50px;   
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+                      
+            }
+
+.pricing_card_title {
+    margin: 20px 0 0 0;
+            
+}
+
+.pricing_card_title1 {
+
+    \\margin: 50px 0 0 0;
+
+}
