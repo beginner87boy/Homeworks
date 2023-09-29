@@ -39,7 +39,7 @@ a {
 .header_button {
     background-color: green;
     color: black;
-    border: none;
+    border: green;
     padding: 8px 16px;
     border-radius: 5px;
 }
