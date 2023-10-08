@@ -53,8 +53,7 @@ a {
     background-color: white; 
     top: 36px;
     display: flex;
-    border: 1px solid red;
-       
+           
 }
 
 .box1 {
@@ -228,7 +227,7 @@ a {
                
     }
 
-    .pricing {
+.pricing {
         position: absolute;
         width: 100%;
         height: 490px;
