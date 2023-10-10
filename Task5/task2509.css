@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 .basliq {
     padding: 0 50px;
     margin: 0 50px;
-     
+
 }
 
 header {
@@ -50,10 +50,10 @@ a {
     width: 100%;
     height: 450px;
     border-radius: 5%;
-    background-color: white; 
+    background-color: white;
     top: 36px;
     display: flex;
-           
+
 }
 
 .box1 {
@@ -64,8 +64,8 @@ a {
     left: 109px;
     gap: 52px;
     border: 1px solid rebeccapurple;
- 
-    }
+
+}
 
 .box2 {
     position: absolute;
@@ -74,7 +74,7 @@ a {
     top: 96px;
     left: 639px;
     border: 1px solid red;
-    
+
 }
 
 
@@ -94,7 +94,7 @@ a {
 }
 
 .submit {
-    
+
     border-radius: 10px;
     border: none;
     background-color: green;
@@ -103,18 +103,18 @@ a {
     height: 30px;
     width: 100px;
     margin: 50px 0 0 0;
-    text-align: center;   
-    
+    text-align: center;
+
 }
 
 .cedvel2 {
     position: relative;
     width: 100%;
     height: 564px;
-    background-color: white; 
+    background-color: white;
     margin: 50px 0 0 0;
-        
-       }
+
+}
 
 .cedvel2_title {
     text-align: center;
@@ -125,29 +125,29 @@ a {
     position: absolute;
     width: 100%;
     height: 490px;
-    background-color: white; 
+    background-color: white;
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
     left: 100px;
-        }
+}
 
 .services_cards {
     width: 390px;
     height: 250px;
     display: flex;
-    left: 50px;   
-          
+    left: 50px;
+
 }
 
 .cedvel3 {
     position: relative;
     width: 100%;
     height: 564px;
-    background-color: white; 
+    background-color: white;
     margin: 30px 0 0 0;
-    
-       }
+
+}
 
 .cedvel3_title {
     text-align: center;
@@ -158,19 +158,19 @@ a {
     position: absolute;
     width: 100%;
     height: 490px;
-    background-color: white; 
+    background-color: white;
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
     left: 100px;
-        }
+}
 
 .advantages_cards {
     width: 390px;
     height: 450px;
     display: flex;
-    left: 50px;   
-          
+    left: 50px;
+
 }
 
 .photo {
@@ -204,62 +204,59 @@ a {
     position: relative;
     width: 100%;
     height: 564px;
-    background-color: white; 
-    display: flex; 
+    background-color: white;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     left: 100px;
-    
-       }
+
+}
 
 .box {
-        
-        width: 130px;
-        height: 50px;
-        border-radius: 5%;
-        border: 1px solid black;
-        text-align: center;
-        font-size: 20px;
-        border-bottom: none;
-        display: flex; 
-        justify-content: center; 
-        margin: 30px 0;
-               
-    }
+
+    width: 130px;
+    height: 50px;
+    border-radius: 5%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+
+}
 
 .pricing {
-        position: absolute;
-        width: 100%;
-        height: 490px;
-        background-color: white; 
-        gap: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 55px 0;
-        justify-content: space-between;
-            }
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    background-color: white;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 55px 0;
+    justify-content: space-between;
+}
 
 .pricing_card {
-        width: 390px;
-        height: 450px;
-        border: 3px solid green;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-                        
-            }
+    width: 390px;
+    height: 450px;
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+}
 
 .pricing_card_title {
     text-align: center;
-            
+
 }
 
-.pricing_card_title1 {
-
-    
-}
+.pricing_card_title1 {}
 
 .pricing_card_title2 {
     border: none;
@@ -275,191 +272,193 @@ a {
     height: 30px;
     width: 200px;
     margin: 20px 0 0 0;
-    text-align: center;   
-    
+    text-align: center;
+
 }
 
 .cedvel6 {
-position: relative;
-width: 120%;
-height: 100px;
-border: 1px solid orange;
-background-color: orange; 
-display: flex; 
-justify-content: center;
-flex-wrap: nowrap;
-     
-       }
+    position: relative;
+    width: 120%;
+    height: 100px;
+    border: 1px solid orange;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
 
 .cedvel6_main {
-position: absolute;
-width: 30px%;
-height: 80px;
-background-color: orange; 
-display: flex; 
-justify-content: center;
-flex-wrap: nowrap;
-          
-           }
+    position: absolute;
+    width: 30px%;
+    height: 80px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
 
 .cedvel6_main {
-gap: 210px;
-align-items: center;
-    }
+    gap: 210px;
+    align-items: center;
+}
 
 
 
-    .cedvel8 {
-        position: relative;
-        width: 100%;
-        height: 350px;
-        background-color: white; 
-        margin: 30px 0 0 0;
-        text-align: center;
-        
-           }
+.cedvel8 {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    margin: 30px 0 0 0;
+    text-align: center;
 
-    .asked {
-        position: absolute;
-        width: 100%;
-        height: 300px;
-        background-color: white; 
-        gap: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        left: 100px;
-            }
-    
-    .asked_main {
-        width: 450px;
-        height: 250px;
-        display: flex;
-        background-color: white;
-        margin-top: 20px; 
-                   
-    }
+}
 
-    .asked_main1 {
-        width: 500px;
-        height: 250px;
-        display: flex;
-        background-color: white;
-        margin: 20px; 
-        text-align: left;
-               
-    }
+.asked {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    left: 100px;
+}
 
-    .asked_title {
-        margin: 10px; 
-    text-align: left;  }
+.asked_main {
+    width: 450px;
+    height: 250px;
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
 
-    
-    
-    
+}
 
-    
+.asked_main1 {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    background-color: white;
+    margin: 20px;
+    text-align: left;
 
-    .cedvel7 {
-        position: relative;
-        width: 100%;
-        height: 200px;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; 
-        gap: 60px; 
-        left: 80px;
-                            
-           }
-    
-    .cedvel7_title {
-        text-align: center;
-    
-    }
+}
 
-   
-    .partners_button {
-        border: none;
-        background-color: grey;
-        border-color: none;
-        color: black;
-        height: 50px;
-        width: 300px;
-        margin: 5px 0 0 0;
-        left: 50px;
-                 
-        
-    }
+.asked_title {
+    margin: 10px;
+    text-align: left;
+}
 
 
 
 
-    .feedback {
-        position: absolute;
-        width: 100%;
-        height: 490px;
-        background-color: white; 
-        gap: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        left: 100px;
-            }
-    
-    .feedback_cards {
-        width: 390px;
-        height: 250px;
-        display: flex;
-        left: 50px; 
-        background-color: blueviolet; 
-                   
-    }
-
-    .feedback_title {
-        margin-left: 40px;
-        margin-top: 80px;
-        border: none;
-    }
-    
-    .feedback_title1 {
-        width: 320px;
-        list-style: none;
-        padding: 30px 0 0 0;
-        margin-left: 30px;
-        text-align: center;
-    }
-
-    .feedback_title2 {
-        text-align: center;
-        font-size: 15px;
-
-    }
 
 
 
-    
-    .cedvel20 {
-        position: relative;
-        width: 100%;
-        height: 180px;
-        background-color: yellow;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; 
-                                          
-           }
+.cedvel7 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    left: 80px;
+
+}
+
+.cedvel7_title {
+    text-align: center;
+
+}
+
+
+.partners_button {
+    border: none;
+    background-color: grey;
+    border-color: none;
+    color: black;
+    height: 50px;
+    width: 300px;
+    margin: 5px 0 0 0;
+    left: 50px;
+
+
+}
+
+
+
+
+.feedback {
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    background-color: white;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    left: 100px;
+}
+
+.feedback_cards {
+    width: 390px;
+    height: 250px;
+    display: flex;
+    left: 50px;
+    background-color: blueviolet;
+
+}
+
+.feedback_title {
+    margin-left: 40px;
+    margin-top: 80px;
+    border: none;
+}
+
+.feedback_title1 {
+    width: 320px;
+    list-style: none;
+    padding: 30px 0 0 0;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.feedback_title2 {
+    text-align: center;
+    font-size: 15px;
+
+}
+
+
+
+
+.cedvel20 {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
 
 .cedvel20_main {
-        position: relative;
-        width: 100%;
-        height: 90px;
-        background-color: yellow;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; 
-        gap: 50px;
-                                   
-           }          
- .cedvel20_title {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.cedvel20_title {
     text-align: center;
     margin-top: 20px;
     justify-content: center;
@@ -475,8 +474,8 @@ align-items: center;
     height: 40px;
     width: 250px;
     margin: 20px 0 0 0;
-    text-align: center; 
-    
+    text-align: center;
+
 }
 
 .submit_pricing2 {
@@ -487,49 +486,49 @@ align-items: center;
     height: 40px;
     width: 250px;
     margin: 20px 0 0 0;
-       
+
 }
 
 
 .cedve21 {
-position: relative;
-width: 100%;
-height: 400px;
-border: 1px solid orange;
-background-color: grey; 
-display: flex; 
-justify-content: left;
-flex-wrap: nowrap;
-     
-       }
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border: 1px solid orange;
+    background-color: grey;
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+
+}
 
 .cedve21_main {
-position: relative;
-width: 200px;
-height: 300px;
-background-color: grey; 
-display: flex; 
-justify-content: center;
-flex-wrap: wrap;
-margin: 30px;
-left: 100px;
-           }
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    left: 100px;
+}
 
 .cedve21_main1 {
-            position: relative;
-            width: 250px;
-            height: 300px;
-            background-color: grey; 
-            display: flex; 
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 30px;
-            left: 100px;
-                       }
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    left: 100px;
+}
 
 .cedvel21_title {
-margin: 20px 0;
-color: white;
+    margin: 20px 0;
+    color: white;
 
 }
 
@@ -537,5 +536,5 @@ color: white;
     margin: 20px 0;
     color: white;
     font-size: 13px;
-    
-    }
+
+}
