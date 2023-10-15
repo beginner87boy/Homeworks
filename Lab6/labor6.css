@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8D4DDF;
+  padding: 0 50px;
+}
+header .header_nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+header .submit {
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+}
+header .submit1 {
+  background-color: transparent;
+  color: white;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  border: none;
+}
+header .submit:hover {
+  background-color: grey;
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    background-color: white;
+  }
+  .header_nav {
+    display: none;
+  }
+}/*# sourceMappingURL=labor6.css.map */
