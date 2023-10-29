@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid_conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1pr);
+  grid-template-rows: repeat(4, 1pr);
+  grid-template-areas: "header header header" "aside article section" "label article address" "footer footer footer";
+  gap: 10px;
+  text-align: center;
+}
+
+header {
+  background-color: grey;
+  height: 100px;
+  grid-area: header;
+}
+
+aside {
+  background-color: green;
+  height: 100px;
+  grid-area: aside;
+}
+
+article {
+  background-color: blueviolet;
+  height: 100%;
+  grid-area: article;
+}
+
+section {
+  background-color: red;
+  height: 100px;
+  grid-area: section;
+}
+
+label {
+  background-color: yellow;
+  height: 200px;
+  grid-area: label;
+}
+
+address {
+  background-color: orange;
+  height: 200px;
+  grid-area: address;
+}
+
+footer {
+  background-color: gray;
+  height: 100px;
+  grid-area: footer;
+}/*# sourceMappingURL=onbirinci.css.map */

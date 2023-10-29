@@ -1,0 +1,10 @@
+@mixin size ($width,$height,$displey,$justify,$backround_color,$align_items)
+{
+    width: $width ;
+    height: $height;
+    display: $displey;
+    justify-content: $justify;
+    background-color: $backround_color;
+    align-items: $align_items;
+}
+
