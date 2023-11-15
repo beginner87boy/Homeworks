@@ -110,7 +110,7 @@ displayPersoneInfo();
 
 //// Task 3.2 end
 
-////3.3 Create an object `car` with properties `make`, `model`, and `year`. Write a method `displayCarInfo` that prints the car's information.
+//// Task 3.3 Create an object `car` with properties `make`, `model`, and `year`. Write a method `displayCarInfo` that prints the car's information.
 
 const cars = {
   make: 'Hyundai',
@@ -129,8 +129,29 @@ cars.displeyCarInfo();
 //// Task 3.3 end
 
 /////#### Task 4: Advanced Array Methods
-/////4.1 Create an array of numbers and use the `map` function to square each element. Print the resulting array.
+///// Task 4.1 Create an array of numbers and use the `map` function to square each element. Print the resulting array.
 
-/////4.2 Given an array of strings, use the `filter` function to create a new array containing only strings with more than 5 characters.
+const numbers = [2, 4, 5, 7, 9];
 
-/////4.3 Write a function `calculateTotal` that takes an array of prices and uses the `reduce` function to calculate the total cost.
+const squaredNumbers = numbers.map(function(number) {
+    return number * number;
+});
+
+console.log(squaredNumbers);
+
+///// Task 4.1 end
+
+
+///// Task 4.2 Given an array of strings, use the `filter` function to create a new array containing only strings with more than 5 characters.
+
+const fruit = ["Lemon", "Apple", "Pear", "Banana", "Grapes", "Kiwi", "Mango", "Orange", "Grapefruit"];
+
+const longFruit = fruit.filter(function(fruit) {
+    return fruit.length > 5;
+});
+
+console.log(longFruit);
+
+///// Task 4.2 end
+
+///// Task 4.3 Write a function `calculateTotal` that takes an array of prices and uses the `reduce` function to calculate the total cost.
