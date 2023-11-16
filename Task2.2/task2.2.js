@@ -8,6 +8,8 @@ greetUser("Teacher");
 
 // Task 1.1 end
 
+
+
 // Task 1.2 Write a function `calculateArea` that calculates and returns the area of a rectangle. The function should take the length and width as parameters.
 
 function calculateArea(length, width) {
@@ -18,6 +20,9 @@ console.log("Area", area);
 
 // Task 1.2 end
 
+
+
+
 //1.3 Implement a function `isEven` that checks if a given number is even. Return `true` if it is, otherwise `false`.
 
 function isEven(number) {
@@ -27,6 +32,8 @@ function isEven(number) {
 console.log(isEven(7));
 
 // Task 1.3 end
+
+
 
 
 ///### Task 2: Array Manipulation
@@ -44,7 +51,10 @@ displayFruits();
 
 /// Task 2.1 end
 
-///2.2 Implement a function `reverseArray` that reverses the elements of an array. Test it with both numeric and string arrays.
+
+
+
+/// Task 2.2 Implement a function `reverseArray` that reverses the elements of an array. Test it with both numeric and string arrays.
 
 function reverseArray(arr) {
   return arr.reverse();
@@ -54,6 +64,9 @@ let numericArray = [7, 5, 13, 50, 41];
 console.log(reverseArray(numericArray));
 
 /// Task 2.2 end
+
+
+
 
 
 /// Task 2.3 Write a function `filterEvenNumbers` that takes an array of numbers and returns a new array containing only the even numbers.
@@ -66,6 +79,10 @@ let numbersArray = [9, 20, 15, 23, 25, 52, 98, 70];
 console.log(filterEvenNumbers(numbersArray));
 
 /// Task 2.3 end
+
+
+
+
 
 
 ////#### Task 3: Object and Methods
@@ -89,6 +106,10 @@ displayPersonInfo();
 //// Task 3.1 end
 
 
+
+
+
+
 //// Task 3.2 Extend the `person` object by adding a method `haveBirthday` that increments the age by 1 each time it's called.
 
 let persone = {
@@ -110,6 +131,10 @@ displayPersoneInfo();
 
 //// Task 3.2 end
 
+
+
+
+
 //// Task 3.3 Create an object `car` with properties `make`, `model`, and `year`. Write a method `displayCarInfo` that prints the car's information.
 
 const cars = {
@@ -128,6 +153,10 @@ cars.displeyCarInfo();
 
 //// Task 3.3 end
 
+
+
+
+
 /////#### Task 4: Advanced Array Methods
 ///// Task 4.1 Create an array of numbers and use the `map` function to square each element. Print the resulting array.
 
@@ -142,6 +171,10 @@ console.log(squaredNumbers);
 ///// Task 4.1 end
 
 
+
+
+
+
 ///// Task 4.2 Given an array of strings, use the `filter` function to create a new array containing only strings with more than 5 characters.
 
 const fruit = ["Lemon", "Apple", "Pear", "Banana", "Grapes", "Kiwi", "Mango", "Orange", "Grapefruit"];
@@ -154,4 +187,31 @@ console.log(longFruit);
 
 ///// Task 4.2 end
 
+
+
+
+
 ///// Task 4.3 Write a function `calculateTotal` that takes an array of prices and uses the `reduce` function to calculate the total cost.
+
+var calculateTotal = function(arr) {
+  return arr.reduce((sum, i) => {
+    return sum + (i.price * i.quantity)
+  }, 0)
+};
+
+
+var totalCarPrice = [{
+  "name": "Minestrone",
+  "price": 4,
+  "quantity": 3,
+ }, {
+  "name": "Tomatensuppe",
+  "price": 5,
+  "quantity": 2,
+}]
+
+
+console.log("Total Price",calculateTotal(totalCarPrice));
+
+///// Task 4.3 end
+
