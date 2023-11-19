@@ -1,0 +1,25 @@
+@mixin size($w, $h){
+    width: $w;
+    height: $h;
+}
+
+@mixin d-flex($f, $just, $direct, $align, $wr, $gap){
+    display: $f;
+    justify-content: $just;
+    flex-direction: $direct;
+    align-items: $align;
+    flex-wrap: $wr;
+    gap: $gap;
+}
+
+@mixin main-param($mw, $mh, $p, $m, $g, $bckg-c, $c, $border-r, $border){
+    min-width: $mw;
+    min-height: $mh;
+    padding: $p;
+    margin: $m ;
+    gap: $g;
+    background-color: $bckg-c ;
+    color: $c;
+    border-radius: $border-r;
+    border: $border;
+}

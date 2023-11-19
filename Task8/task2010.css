@@ -125,6 +125,7 @@ header .submit1 {
 }
 .main2_title {
   font-size: 2rem;
+  font-family: "Poppins", sans-serif;
   gap: 1rem;
   padding-left: 3rem;
 }
@@ -161,6 +162,7 @@ header .submit1 {
 }
 .main3_title {
   font-size: 2rem;
+  font-family: "Poppins", sans-serif;
   gap: 1rem;
   padding-left: 3rem;
 }
@@ -188,13 +190,16 @@ header .submit1 {
 }
 .main3 .photo {
   text-align: center;
+  font-family: "Poppins", sans-serif;
   padding: 0.7rem;
 }
 .main3 .cards_title {
   padding: 0.7rem;
+  font-family: "Poppins", sans-serif;
 }
 .main3 .cards_title2 {
   font-size: 2.1rem;
+  font-family: "Poppins", sans-serif;
   padding: 0.5rem;
 }
 .main3 .submit {
@@ -206,6 +211,7 @@ header .submit1 {
   align-items: center;
   color: black;
   text-align: center;
+  font-family: "Poppins", sans-serif;
   border-radius: 0.4rem;
   background-color: #C9EAEF;
   border: 0.1rem solid #C9EAEF;
@@ -230,6 +236,7 @@ header .submit1 {
 .statistic_title {
   font-size: 2.2rem;
   color: #2a5055;
+  font-family: "Poppins", sans-serif;
 }
 .statistic_content {
   width: 54rem;
@@ -259,10 +266,12 @@ header .submit1 {
 .statistic_content_card_num {
   color: #356167;
   font-size: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 .statistic_content_card_title {
   color: #4c848c;
   font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .main4 {
@@ -293,11 +302,13 @@ header .submit1 {
   font-size: 2rem;
   font-weight: 30rem;
   color: black;
+  font-family: "Poppins", sans-serif;
 }
 .main4_box1_title1 {
   font-size: 1.2rem;
   font-weight: 25rem;
   color: black;
+  font-family: "Poppins", sans-serif;
 }
 
 .top10 {
@@ -355,12 +366,14 @@ header .submit1 {
   color: black;
   text-wrap: nowrap;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .top10_categories_cards_card_photo_name_job {
   font-size: 0.8 rem;
   font-weight: 19 rem;
   color: black;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .people {

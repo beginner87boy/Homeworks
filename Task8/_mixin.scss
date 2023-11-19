@@ -8,3 +8,25 @@
     align-items: $align_items;
 }
 
+@mixin d-flex ($f, $just, $direct, $align, $wr, $gap)
+{
+    display: $f;
+    justify-content: $just;
+    flex-direction: $direct;
+    align-items: $align;
+    flex-wrap: $wr;
+    gap: $gap;
+}
+
+@mixin main-param ($mw, $mh, $p, $m, $g, $bckg, $c, $border-r, $border)
+{
+    min-width: $mw;
+    min-height: $mh;
+    padding: $p;
+    margin: $m;
+    gap: $g;
+    background-color: $bckg;
+    color: $c;
+    border-radius: $border-r;
+    border: $border;
+}

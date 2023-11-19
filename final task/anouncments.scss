@@ -1,0 +1,336 @@
+@import './variables';
+@import './mixins';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+header{
+    // min-width: 1440px;
+    // margin: auto;
+    background-color: $--color1;
+    // height: 277px;
+
+}
+main{
+    @include d-flex (flex, space-between, column,  center, wrap, _);
+    width: 1225px;
+    margin: auto;
+}
+
+.nav-bar{
+    @include d-flex (flex, space-between, row, center, wrap, _);
+    width: 1220px;
+    height: 52px;
+    margin: auto;
+    
+    .helpers{
+        @include d-flex (flex, start, row, center, wrap, _);
+        width: 157px;
+        height: 52px;
+        border-radius: 4px;
+        padding: 6px, 4px, 6px, 4px;
+        gap: 10px;
+        text-align: center;
+        .helper-a{
+            font-size: 20px;
+            color: $--color3;
+            
+        }
+    }
+
+    .menu{
+        @include d-flex(flex, space-between, row, center, wrap, _ );
+        width: 788px;
+        height: 40px;
+
+        
+        .pages-card{
+            @include d-flex(flex, space-between, row, center, wrap, _ );
+            list-style: none;
+            width: 355px;
+            height: 24px;        
+            a{
+                text-decoration: none;
+                color: $--color2;
+                font-size: 16px;
+            }
+           
+        }
+
+        .sign-card{
+            width: 197px;
+            height: 40px;
+            .donate-btn{
+                width: 84px;
+                height: 40px;
+                border-radius: 8px;
+                padding: 8px, 16px, 8px, 16px;
+                gap: 12px;
+                background-color: $--color3;
+                font-size: 14px;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .signup-btn{
+                width: 85px;
+                height: 40px;
+                border-radius: 8px;
+                padding: 8px, 16px, 8px, 16px;
+                gap: 12px;
+                font-size: 14px;
+                color: $--color3;
+                border: 1px solid $--color3;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.h2-section-title{
+font-size: 32px;
+color: $--color6;
+}
+
+.section-announcements{
+    min-width: 1225px;
+    min-height: 1222px;
+    @include d-flex (flex, space-around, column, bottom, wrap, 28px);
+
+    &-header{
+        width: 100%;
+        min-height: 48px;
+        @include d-flex (flex, space-between, row, center, nowrap, 228px);
+       
+
+        &-searchs{
+            input{
+                @include main-param(240px, 44px, 8px 24px 8px 24px, _,  8px, $--color1, _, 8px, 1px solid #A3A9B6  );
+            }
+            .all-btn{
+                @include main-param(67px, 44px, 10px 24px 10px 24px, _,  10px, $--color3, white, 8px, none);
+            }
+
+            .edu-btn{
+                @include main-param(129px, 44px, 10px 24px 10px 24px, _,  10px, $--color1, _, 8px, none);
+            }
+
+            .adult-btn{
+                @include main-param(90px, 44px, 10px 24px 10px 24px, _,  10px, $--color1, _, 8px, none);
+            }
+
+            .children-btn{
+                @include main-param(116px, 44px, 10px 24px 10px 24px, _,  10px, $--color1, _, 8px, none);
+            }
+
+            .animals-btn{
+                @include main-param(113px, 44px, 10px 24px 10px 24px, _,  10px, $--color1, _, 8px, none);
+            }
+
+        }
+
+        .sort-btn{
+            @include main-param(182px, 44px, 10px 24px 10px 24px, _,  10px, $--color1, _, 8px, none  );
+        }
+    }
+
+    &-main{
+        width: 100%;
+        min-height: 523px;
+        @include d-flex (flex, space-between, row, center, nowrap, 24px);
+    
+
+        &-cards{
+            width: 392px;
+            height: 523px;
+            @include d-flex (flex, space-around, column, center, wrap, _);
+        
+
+            &-img{
+                width: 392px;
+                height: 312px;
+                border-radius: 8px;
+                // border: 1px solid #C2C6CE;
+                position: relative;
+            
+                
+                .image{
+                    max-width: 392px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+                .icon{
+                   width: 28px;
+                   height: 28px;
+                   border-radius: 4px;
+                   background-color: #F0F1F3;
+                   position: absolute; 
+                   top: 16px;
+                   right: 21px;
+                }
+            }
+
+            &-post{
+                width: 392px;
+                height: 104px;
+                // gap: 8px;
+          
+
+                &-titles{
+                    font-size: 20px;
+                    font-weight:bold;
+                    color: #000000;
+                }
+
+                &-txt{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #000000;
+                }
+            }
+
+            &-donate{
+                @include d-flex (flex, space-between, column, start, nowrap, _);
+                width: 392px;
+                height: 80px;
+                gap: 4px;
+
+            
+                &-txt_donation{
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #000000;
+                }
+
+                &-progress{
+                    width: 100%;
+                    height: 10px;
+
+                    background: linear-gradient(to right, $--color4 50%, $--color1 -50%);
+                }
+
+                &-txt_amount{
+                    @include d-flex (flex, center, column, center, wrap, _); 
+                    width: 286px;
+                    height: 32px;
+                    gap: 8px;
+
+                    &-raised{
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+
+                    &-goal{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+.load{
+    @include main-param(107px, 40px, 8px 16px 8px 16px, 72px auto 0 auto, 12px, _ , #2A5055, 8px, 1px solid #2A5055);
+}
+
+footer{
+    @include d-flex(flex, bottom, column, center, nowrap, _);
+    min-height: 366px;
+    background-color: #F0F1F3;
+    // background-color: rgba(240, 241, 243, 1);
+   
+
+    .faq{
+        @include d-flex(flex, space-between, row, end, nowrap, 128px);
+        width: 1223px;
+        height: 228px;
+        margin: auto;
+
+        &-items{
+            @include d-flex(flex, center, column, bottom, nowrap, _);
+            max-height: 228px;
+            
+
+            &-title{
+                font-size: 24px;
+                font-weight: 600;
+                color: #1D2939;
+            }
+
+            &-txt{
+                // @include d-flex(flex, center, column, start, nowrap, _);
+                padding-top: 10px;
+                list-style: none;
+                text-align: start;
+                font-size: 16px;
+                font-weight: 400;
+                color: #1D2939;
+
+                &li{
+                padding: 70px;
+                }
+            }
+        }
+
+        &-subsqribe{
+            @include d-flex(flex, center, row, bottom, nowrap, 12px);
+            width: 365px;
+            height: 48px;
+
+            .sub-input{
+                width: 243px;
+                border-radius: 8px;
+                font-size: 14px;
+                color: #667085;
+            }
+            .sub-btn{
+                width: 110px;
+                padding: 12px, 20px, 12px, 20px;
+                gap: 12px;
+                border-radius: 8px;
+                background-color: $--color4;
+                font-size: 14px;
+                text-align: center;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}   
+
+
+.footer-down{
+    @include d-flex(flex, space-around, row, bottom, nowrap, 652px);
+    min-height: 62px;
+    background-color: #F0F1F3;
+
+    &-items{
+        @include d-flex(flex, center, row, bottom, nowrap, 12px);
+        font-size: 14px;
+        list-style: none;
+        cursor: pointer;
+        color: #000000;
+    }
+    &-icons{
+        width: 186px;
+        height: 24px;
+
+        img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.cont{
+    margin-top: 96px;
+}
+
+
