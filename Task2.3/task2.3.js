@@ -1,16 +1,16 @@
 //Task 1: Change the Background Color
 //// Create an HTML file with a button. When the button is clicked, change the background color of the page to a random color.
 
-// let result = document.getElementById("GFG");
+let result = document.getElementById("GFG");
  
-// function changeColor(color) {
-//     document.body.style.background = color;
-// }
+function changeColor(color) {
+    document.body.style.background = color;
+}
 
-// function cliced() {
-//     changeColor('yellow');
-//     result.innerHTML = "Background Color changed";
-// }    
+function cliced() {
+    changeColor('yellow');
+    result.innerHTML = "Background Color changed";
+}    
 
 
 // Task 1 end
@@ -19,10 +19,10 @@
 
 // Task 2 Create an HTML file with a button and a counter display. When the button is clicked, increment the counter and update the display.
 
-// function changeValue(diff) {
-//   var count = document.getElementById('count');
-//   count.innerText = +count.innerText + diff;
-// }
+function changeValue(diff) {
+  var count = document.getElementById('count');
+  count.innerText = +count.innerText + diff;
+}
 
 // Task 2 end
 

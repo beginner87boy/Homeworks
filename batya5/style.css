@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.btn {
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: rgb(245, 229, 11);
+    background-color: rgb(226, 43, 43);
+    border-radius: .8rem;
+
+
+}
+
+.form {
+    display: none;
+}
+.form_box {
+    width: 42rem;
+    height: 25vh;
+    padding: .4rem 1rem;
+    border: 1px solid rgb(189, 182, 182);
+    border-radius: 1rem;
+}
+.icon {
+   margin-left: 41rem;
+   font-size: 1.2rem;
+   cursor: pointer;
+
+}
+
+.form_box_item_h1 {
+    font-size: 2.1rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+.form_box_item_h2 {
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+#test {
+    width: 39.5rem;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(189, 182, 182);
+    border-radius: .5rem;
+
+}
+
+.form_box_btn {
+    display: flex;
+    gap: 1.2rem;
+    /* width: 100%; */
+    margin-top: .5rem;
+    margin-left: 29rem;
+     
+
+}
+.form_box_btn_1 {
+    width: 6rem;
+    padding: .5rem .1rem;
+    border-radius: .5rem;
+    background: white;
+    cursor: pointer;
+}
+
+.form_box_btn_2 {
+    width: 6rem;
+    padding: .5rem .1rem;
+    border-radius: .5rem;
+    background: rgb(134, 132, 132);
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+}
