@@ -18,27 +18,50 @@
     display: none;
 }
 
+.unit_box {
+    width: 500px;
+    height: 250px;
+    padding: 10px 10px;
+    border: 1px solid rgb(189, 182, 182);
+    border-radius: 10px;
+}
+
 .icon {
-    margin-left: 200px;
+    margin-left: 470px;
     font-size: 20px;
     cursor: pointer;
  
  }
 
+ .unit_box_btn {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 10px;
+    margin-left: 250px;
+     }
+
 .unit_box_btn1 {
     width: 100px;
     padding: 10px 10px;
     border-radius: 5px;
-    background: yellow;
-    cursor: pointer;
-}
+    color: grey;
+    background-color: white;
+    border-color: grey;
+    }
 
 .unit_box_btn2 {
     width: 100px;
     padding: 10px 10px;
     border-radius: 5px;
-    background: green;
-    cursor: pointer;
+    color: white;
+    background: grey;
+  }
+
+  #text {
+    width: 400px;
+    border: 1px solid rgb(189, 182, 182);
+    border-radius: 10px;
+
 }
 
 .active {
