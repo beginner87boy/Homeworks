@@ -3,4 +3,4 @@
   function promptMe(){
     var userAdd = prompt("Melumati daxil edin");
     console.log(userAdd);
-}
+} 

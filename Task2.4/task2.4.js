@@ -23,6 +23,17 @@ const reverseString = (str) => str.split("").reverse().join("");
 
 // Task 2 Write program to repeat every character in string 3 times: 'Hello world' => 'HHHeeellllllooo wwwooorrrlllddd!!!'   
 
+let x = prompt('Sozu daxil edin', '');
+let x1 = x.length;
+let y = +prompt('her simvol nece defe tekrarlansin?','');
+let z = '';
+function repSym(x1, y){
+    for (let i = 0; i<x1; i++){
+        z +=x[i].repeat(y);
+    }
+    return alert(z)
+}
+repSym(x1, y);
 
 
 
@@ -162,14 +173,14 @@ console.log(text_truncates('Hello world, nice talking to you',20))
 
 //// Task 9 Create a program to calculate the sum of the elements in an array of numbers: [1, 2, 3, 4, 5] => 15 
 
-let myNumbers = [1, 2, 3, 4, 5];
-let sum = 0;
+// let myNumbers = [1, 2, 3, 4, 5];
+// let sum = 0;
 
-for (let i = 0; i < myNumbers.length; i++ ) {
-  sum += myNumbers[i];
-}
+// for (let i = 0; i < myNumbers.length; i++ ) {
+//   sum += myNumbers[i];
+// }
 
-console.log(sum)
+// console.log(sum)
 
 
 //// Task 9 end
