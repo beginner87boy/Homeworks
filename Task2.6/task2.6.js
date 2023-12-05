@@ -1,48 +1,39 @@
-jQuery(document).ready(function ($) {
+const next = document.querySelector(".next");
 
-    $('#checkbox').change(function(){
-      setInterval(function () {
-          moveRight();
-      }, 3000);
-    });
-    
-    var slideCount = $('#slider ul').length;
-    var slideWidth = $('#slider ul').width();
-    var slideHeight = $('#slider ul').height();
-    var sliderUlWidth = slideCount * slideWidth;
-    
-    $('#slider').css({ width: slideWidth, height: slideHeight });
-    
-    $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-    
-      $('#slider ul:last-child').prependTo('#slider ul');
-  
-      function moveLeft() {
-          $('#slider ul').animate({
-              left: + slideWidth
-          }, 200, function () {
-              $('#slider ul:last-child').prependTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
-  
-      function moveRight() {
-          $('#slider ul').animate({
-              left: - slideWidth
-          }, 200, function () {
-              $('#slider ul:first-child').appendTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
-  
-      $('a.control_prev').click(function () {
-          moveLeft();
-      });
-  
-      $('a.control_next').click(function () {
-          moveRight();
-      });
-  
-  });    
+const prev = document.querySelector(".prev");
+
+const image = document.querySelectorAll("img");
+
+const images = document.querySelector(".slider_images");
 
 
+let currentImg =1 ;
+
+let timeout;
+
+next.addEventListener("click", () => {
+  currentImg++;
+  clearTimeout(timeout);
+  updateImg();
+});
+
+prev.addEventListener("click", () => {
+  currentImg--;
+  clearTimeout(timeout);
+  updateImg();
+});
+
+updateImg();
+
+function updateImg() {
+  if (currentImg > image.length) {
+    currentImg = 1;
+  } else if (currentImg < 1) {
+    currentImg = image.length;
+  }
+  images.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
+  timeout = setTimeout(() => {
+    currentImg++;
+    updateImg();
+  }, 3000);
+}

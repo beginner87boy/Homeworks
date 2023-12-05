@@ -1,22 +1,23 @@
-const nextEl = document.querySelector(".next");
+const next = document.querySelector(".next");
 
-const prevEl = document.querySelector(".prev");
+const prev = document.querySelector(".prev");
 
-const imgsEl = document.querySelectorAll("img");
+const image = document.querySelectorAll("img");
 
-const imageContainerEl = document.querySelector(".image-container");
+const images = document.querySelector(".images");
 
-let currentImg = 1;
+
+let currentImg =1 ;
 
 let timeout;
 
-nextEl.addEventListener("click", () => {
+next.addEventListener("click", () => {
   currentImg++;
   clearTimeout(timeout);
   updateImg();
 });
 
-prevEl.addEventListener("click", () => {
+prev.addEventListener("click", () => {
   currentImg--;
   clearTimeout(timeout);
   updateImg();
@@ -25,12 +26,12 @@ prevEl.addEventListener("click", () => {
 updateImg();
 
 function updateImg() {
-  if (currentImg > imgsEl.length) {
+  if (currentImg > image.length) {
     currentImg = 1;
   } else if (currentImg < 1) {
-    currentImg = imgsEl.length;
+    currentImg = image.length;
   }
-  imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
+  images.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
   timeout = setTimeout(() => {
     currentImg++;
     updateImg();
