@@ -57,7 +57,6 @@ h1 {
   height: 80px;
 }
 
-
 .accordion .container.active .label::before {
   content: '-';
   font-size: 30px;
