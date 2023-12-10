@@ -1,0 +1,102 @@
+
+
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
+const input_text_label = document.getElementById('input_text_label');
+
+form.addEventListener('submit',(e) => {
+    e.preventDefault();
+
+    checkInputs();
+});
+
+  function checkInputs() {
+    const usernameValue = username.value.trim();
+    const passwordValue = password.value.trim();
+    const input_text_labelValue = input_text_label.value.trim();
+
+
+     if(usernameValue === '') {
+        // show error
+        // add error class
+        setErrorFor(username, 'Username cannot be blank');
+     } else {
+        // add success class
+        setSuccessFor(username);
+     }
+
+
+     if(input_text_labelValue === '') {
+        // show error
+        // add error class
+        setErrorFor(input_text_label, 'Username cannot be blank');
+     } else {
+        // add success class
+        setSuccessFor(input_text_label);
+     }
+
+     if(passwordValue === '') {
+      // show error
+      // add error class
+      setErrorFor(password, 'Username cannot be blank');
+   } else if (passwordValue.length < 8) {
+      setErrorFor(password, 'The password is incorrect');
+   }else {
+      // add success class
+      setSuccessFor(password);
+   }
+
+
+     
+
+
+  }
+
+  function setErrorFor(input, message) {
+    const formControl = input.parentElement;// .form-control
+    const small = formControl.querySelector('small');
+
+    // add error message inside small
+    small.innerText = message;
+
+    // add error class
+    formControl.className = 'form-control error';
+
+  }
+
+  function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+
+  }
+
+
+  
+
+  
+
+  
+  document.addEventListener("DOMContentLoaded", function() {
+
+   var toggleButton = document.getElementById("toggleButton");
+   var content = document.getElementById("content");
+ 
+
+   toggleButton.addEventListener("click", function() {
+     toggleElement(content);
+   });
+ });
+ 
+
+ function toggleElement(element) {
+   if (element.classList.contains("off")) {
+     element.classList.remove("off");
+     element.classList.add("on");
+     toggleButton.textContent = "Off";
+   } else {
+     element.classList.remove("on");
+     element.classList.add("off");
+     toggleButton.textContent = "On";
+   }
+ }

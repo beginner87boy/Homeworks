@@ -1,48 +1,75 @@
-jQuery(document).ready(function ($) {
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
+const input_text_label = document.getElementById('input_text_label');
 
-    $('#checkbox').change(function(){
-      setInterval(function () {
-          moveRight();
-      }, 3000);
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    checkInputs();
+});
+
+function checkInputs() {
+    const usernameValue = username.value.trim();
+    const passwordValue = password.value.trim();
+    const input_text_labelValue = input_text_label.value.trim();
+
+
+    if (usernameValue === '') {
+        setErrorFor(username, 'Error username');
+    } else {
+        setSuccessFor(username);
+    }
+
+
+    if (input_text_labelValue === '') {
+        setErrorFor(input_text_label, 'Error message informing me of a problem');
+    } else {
+        setSuccessFor(input_text_label);
+    }
+
+    if (passwordValue === '') {
+        setErrorFor(password, 'Error password');
+    } else if (passwordValue.length < 8) {
+        setErrorFor(password, 'The password is incorrect');
+    } else {
+        setSuccessFor(password);
+    }
+}
+
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+    small.innerText = message;
+    formControl.className = 'form-control error';
+}
+
+function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    var toggleButton = document.getElementById("toggleButton");
+    var content = document.getElementById("content");
+
+    toggleButton.addEventListener("click", function () {
+        toggleElement(content);
     });
-    
-    var slideCount = $('#slider ul').length;
-    var slideWidth = $('#slider ul').width();
-    var slideHeight = $('#slider ul').height();
-    var sliderUlWidth = slideCount * slideWidth;
-    
-    $('#slider').css({ width: slideWidth, height: slideHeight });
-    
-    $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-    
-      $('#slider ul:last-child').prependTo('#slider ul');
-  
-      function moveLeft() {
-          $('#slider ul').animate({
-              left: + slideWidth
-          }, 200, function () {
-              $('#slider ul:last-child').prependTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
-  
-      function moveRight() {
-          $('#slider ul').animate({
-              left: - slideWidth
-          }, 200, function () {
-              $('#slider ul:first-child').appendTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
-  
-      $('a.control_prev').click(function () {
-          moveLeft();
-      });
-  
-      $('a.control_next').click(function () {
-          moveRight();
-      });
-  
-  });    
+});
+
+
+function toggleElement(element) {
+    if (element.classList.contains("off")) {
+        element.classList.remove("off");
+        element.classList.add("on");
+        toggleButton.textContent = "Off";
+    } else {
+        element.classList.remove("on");
+        element.classList.add("off");
+        toggleButton.textContent = "On";
+    }
+}
+
 
 
