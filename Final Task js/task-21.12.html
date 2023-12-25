@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omer.Final_task</title>
+  <link rel="stylesheet" href="task-Final.css">
+  <link rel="icon" href="https://rajamanickam.vercel.app/favicon-rajamanickam.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+  
+
+</head>
+
+
+
+
+<body>
+  <main>
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"><strong>XOŞ GƏLMİŞSİNİZ</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+           </ul>
+           <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" id="search_field"  placeholder="Məhsul axtarışı " aria-label="Search">
+           </form>
+           <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal"
+              data-target="#staticBackdrop">
+               <i class="fas fa-shopping-cart total-count"></i>
+           </button>
+        </div>
+     </nav>
+     <section>
+        <div class="featured-area pt-100 pb-70">
+           <div class="container">
+              <div class="tab featured-tab-area">
+                 <div class="row justify-content-center">
+
+                    <div class="col-lg-4 col-md-8">
+                       <ul class="tabs active">
+                          <li class="">
+                             <a href="#">Hamısı</a>
+                          </li>
+                          <li class="">
+                             <a href="#">Kişi</a>
+                          </li>
+                          <li class="">
+                             <a href="#">Qadın</a>
+                          </li>
+                          <li class="">
+                             <a href="#">Saat</a>
+                          </li>
+                       </ul>
+                    </div>
+                 </div>
+                 <div class="tab_content current active pt-45">
+                    
+                    <div class="tabs_item current">
+                       <div class="row justify-content-center">
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/men-1.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                 <h3><a href="#">Ağ köynək</a></h3>
+                                 <hr>
+                                 <div class="content-in">
+                                    <h4>$ 12 </h4>
+                                    <span>(4.9)<i class="fa fa-star"></i></span>
+                                 </div>
+                                 <hr>
+                                 <div class="featured-content-list">
+                                    <button type="button" data-name="Koynek" data-price="12" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/women-1.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Tunik </a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 6 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Tunik" data-price="6" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/watch-1.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                 <h3><a href="#">Huawei Saatı</a></h3>
+                                 <hr>
+                                 <div class="content-in">
+                                    <h4>$ 405 </h4>
+                                    <span>(4.4)<i class="fa fa-star"></i></span>
+                                 </div>
+                                 <hr>
+                                 <div class="featured-content-list">
+                                    <button type="button" data-name="Huawei" data-price="405" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/men-2.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Uzunqol köynək</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 8 </h4>
+                                      <span>(4.9)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Uzunqol" data-price="8" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/women-2.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Ziyafət geyimi</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 24 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Ziyafət" data-price="24" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/watch-2.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Ağ Smart Saat</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 59 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Smart" data-price="59" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/men-3.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">İpək köynək</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 29 </h4>
+                                      <span>(4.9)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="İpək" data-price="29" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/women-3.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Pencək</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 45 </h4>
+                                      <span>(4.0)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Pencək" data-price="45" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/watch-3.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Google Pixel</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 21 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Google" data-price="21" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/men-4.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">T-shirt</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 7 </h4>
+                                      <span>(3.9)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="T-shirt" data-price="7" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/women-4.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Yun don</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 41 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Yun" data-price="41" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/watch-4.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Smart Saat ping</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 16 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="smart" data-price="16" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="tabs_item">
+                       <div class="row justify-content-center">
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/men-1.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Ağ köynək</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 12 </h4>
+                                      <span>(4.9)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Ağ" data-price="12" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/men-2.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Uzunqol Köynək</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 8 </h4>
+                                      <span>(4.9)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Uzunqol" data-price="8" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/men-3.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">İpək Köynək</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 29 </h4>
+                                      <span>(4.9)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="İpək" data-price="29" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/men-4.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">T-shirt</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 7 </h4>
+                                      <span>(3.9)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="T-shirt" data-price="7" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="tabs_item">
+                       <div class="row justify-content-center">
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/women-1.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Tunik </a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 6 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Tunik" data-price="6" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/women-2.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Ziyafət geyimi</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 24 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Ziyafət" data-price="24" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/women-3.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Pencək</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 45 </h4>
+                                      <span>(4.0)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Pencək" data-price="45" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/women-4.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Yun don</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 41 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Yun" data-price="41" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="tabs_item">
+                       <div class="row justify-content-center">
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/watch-1.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Huawei Saatı</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 405 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Huawei Saat" data-price="405" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/watch-2.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Ağ Smart Saat </a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 59 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Ağ Smart Saat" data-price="59" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/watch-3.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Google Pixel</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 21 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Google Pixel" data-price="21" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6">
+                             <div class="featured-item">
+                                <div class="featured-item-img">
+                                   <a href="#">
+                                      <img src="/Final Task js/Photo/watch-4.jpg" alt="Images">
+                                   </a>
+                                </div>
+                                <div class="content">
+                                   <h3><a href="#">Smart Saat ping</a></h3>
+                                   <hr>
+                                   <div class="content-in">
+                                      <h4>$ 16 </h4>
+                                      <span>(4.4)<i class="fa fa-star"></i></span>
+                                   </div>
+                                   <hr>
+                                   <div class="featured-content-list">
+                                      <button type="button" data-name="Smart Saat ping" data-price="16" class="default-btn border-radius-5">Səbətə əlavə et</button>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+
+                    <p id="not_found"></p>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+
+     <!-- Modal -->
+     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+              <div class="modal-header">
+                 <h5 class="modal-title" id="staticBackdropLabel">Sənin səbətin</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+              </div>
+              <div class="modal-body">
+                 <table class="show-cart table">
+       
+                 </table>
+                 <div class="grand-total">Cəmi ödəniləcək məbləğ: $<span class="total-cart"></span></div>
+               </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                 
+               </div>
+           </div>
+        </div>
+     </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+
+  <script src="Final js.js"></script>
+
+
+</body>
+
+</html>

@@ -62,4 +62,15 @@ delete_btn.addEventListener("click", ()=> {
     })
               
   
+// for(let i=0; i<5; i++) {
+//     setTimeout(() => console.log(i))
+// }
 
+// for(var i=0; i<5; i++) {
+//     setTimeout(() => console.log(i))
+// }
+
+// let x = [1, 2, 3];
+// let y = x.map((x) => x * x);
+
+// console.log(x[1] ** y[1]);

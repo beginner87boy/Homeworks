@@ -31,6 +31,7 @@ const setQuery = (e) => {
   
   let minmax = document.querySelector(".weather_container_minmax");
   minmax.innerText = `${Math.round(result.main.temp_min)}°C / ${Math.round(result.main.temp_max)}°C`;
+
   };
   
   const searchBar = document.getElementById('searchBar');
