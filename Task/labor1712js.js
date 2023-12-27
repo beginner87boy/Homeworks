@@ -63,7 +63,9 @@ if(document.readyState == "loading"){
 // add button to cart
 let addCart_btns = document.querySelectorAll(".add-cart");
 addCart_btns.forEach(btn => {
-  btn.addEventListener("click", handle_addCartItem)
+  addCart_btns.addEventListener("click", handle_addCartItem)
+  body.classList.add('active');
+
 
 
 
