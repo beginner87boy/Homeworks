@@ -63,8 +63,8 @@ if(document.readyState == "loading"){
 // add button to cart
 let addCart_btns = document.querySelectorAll(".add-cart");
 addCart_btns.forEach(btn => {
-  addCart_btns.addEventListener("click", handle_addCartItem)
-  body.classList.add('active');
+  addCart_btns.addEventListener("click", handle_addCartItem);
+  // body.classList.add('active');
 
 
 
@@ -164,75 +164,3 @@ return `  <div class="cart-box">
   }
 
 
-  
-
-
-  // <div class="product_box">
-  //     <img src ='' alt="product-img">
-  //     <h2 class="product-title"></h2>
-  //     <span class="product-price"></span>
-  //     <button class="add-cart">Add to cart</button>
-    // </div>
-
-
-
-// let cards = document.querySelector(".listProduct");
-// document.addEventListener("DOMContentLoaded", () =>{
-//   fetch("https://dummyjson.com/products")
-//   .then((res) => res.json())
-//   .then((data) =>
-//   data.products.map((item) => {
-//     cards.innerHTML +=`
-//     <div class="item">
-//     <img src="https://i.dummyjson.com/data/products/${item.id}/1.jpg" alt="">
-//     <h2 class="title">${item.title}<h2>
-//     <h3 class="price">${item.price}$<h3>
-//     <button class="addCart">Səbətə əlavə et</button>
-//     </div>`;
-//   }))
-// })
-
-
-
-
-// cards.addEventListener('.click', (event) =>{
-//   let positionClick = event.target;
-//   if(positionClick.classList.contains('addCart')){
-//     let product_title = positionClick.panelElement.dataset.title;
-//     addToCart(product_title)
-//   }
-// })
-
-// let iconCart = document.querySelector('.icon-cart');
-// let closeCart = document.querySelector('.close');
-// let body = document.querySelector('body');
-// // let iconCartSpan = document.querySelector('.icon-cart span');
-
-// let listProduct = [];
-// let cart = [];
-
-// iconCart.addEventListener('click', ()=>{
-//   body.classList.toggle('cartTab')
-// })
-// closeCart.addEventListener('click', ()=> {
-//   body.classList.toggle('showCart')
-// })
-
-// const addToCart = (product_title) => {
-//   let positionThisProductInCart = cart.findIndex((value) => value.product_title == product_title);
-//   if(cart.length <= 0){
-//     cart = [{
-//       product_title: product_title,
-//       quantity: 1
-//     }]
-//       }else if(positionThisProductInCart < 0){
-//         cart.push({
-//           product_title: product_title,
-//           quantity: 1
-//         });
-//       }else{
-//         cart[positionThisProductInCart].quantity = cart [positionThisProductInCart].quantity + 1;
-//       }
-
-//   console.log(cart);
-// }
