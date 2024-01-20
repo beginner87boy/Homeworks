@@ -9,12 +9,12 @@ let cards = document.querySelector(".shop-content");
       <img src="https://i.dummyjson.com/data/products/${item.id}/1.jpg" alt="product-img">
       <h2 class="product-title">${item.title}<h2>
       <h3 class="product-price">${item.price}$<h3>
-      <button class="add-cart">Səbətə əlavə et</button>
+      <button class="add-cart" data-id=${product.id}>Səbətə əlavə et</button>
       </div>`;
     }))
   })
 
-
+ 
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector("#cart-close");
@@ -72,6 +72,8 @@ addCart_btns.forEach(btn => {
   // buy order
 const buy_btn = document.querySelector(".btn-buy");
 buy_btn.addEventListener("click", handle_buyOrder);
+// catch (console.error(error););
+
 })
 
 
@@ -92,8 +94,8 @@ function handle_buyOrder(){
 
 
 // let ItemsAdded = [];
-function handle_addCartItem() {
-  let product = this.parentElement;
+function handle_addCartItem(btn) {
+  let product = btn.parentElement;
   let title = product.querySelector(".product-title").innerHTML;
   let price = product.querySelector(".product-price").innerHTML;
   let imgSrc = product.querySelector(".product-img");
@@ -104,6 +106,7 @@ function handle_addCartItem() {
     price,
     imgSrc
   };
+
 
   if(ItemsAdded.find((el) => el.title == newToAdd.title)) {
     return;
@@ -163,4 +166,18 @@ return `  <div class="cart-box">
       </div>`
   }
 
+
+  // function addDiscounts(prices, discounts) {
+  //   let discountedPrices = [];
+  //   for (let i = 0; i < prices.length; i++) {
+  //      let discountedPrice = calculateDiscount(prices[i], discounts[i]);
+  //      discountedPrices.push(discountedPrice);
+  //   }
+  //   return discountedPrices;
+  //  }
+
+  // function calculateQuantityPrice(price, quantity) {
+  //   let totalPrice = price * quantity;
+  //   return totalPrice;
+  //  }
 

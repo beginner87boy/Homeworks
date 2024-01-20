@@ -1,0 +1,50 @@
+.Card{
+    border: 1px solid black;
+    width: 250px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Card .Card_Product_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+.Card .Card_Product_img .Card_Product_img_Image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.Card .Card_seller_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.Card .Card_evolution_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.Card .Card_evolution_items_Popularity{
+    width: 40%;
+    cursor: pointer;
+}
+.Card .Card_sale_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red; 
+}
+.Card .Card_sale_items_Addtocard{
+    width: 60%;
+    cursor: pointer;
+}
