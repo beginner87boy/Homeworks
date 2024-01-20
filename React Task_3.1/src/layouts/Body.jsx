@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../conponents/Cards/Card'
+import Card from './conponents/Cards/Card'
 import './Body.css'
 import image1 from './samsung.jpg';
 import image2 from './iphone.jpg';
@@ -12,7 +12,7 @@ const Body = () => {
       id:0,
       prod_name: "Samsung Galaxy S23 Ultra",
       seller_name:"Hüseyn Hüseynov",
-      wievs: "17,337",
+      wievs: "17.337",
       reyting: "4.5",
       popularity: "Most popular",
       price: "$1999",
